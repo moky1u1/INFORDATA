@@ -1,6 +1,8 @@
 package Pojos;
 
-public class Monitor extends Alquiler{
+import Interfaces.IReseteable;
+
+public class Monitor extends Alquiler implements IReseteable {
     private String resolucionMaxima;
 
     public Monitor(String codigo, String modelo,double precioHora, String resolucionMaxima){
@@ -25,5 +27,10 @@ public class Monitor extends Alquiler{
                 ", codigo='" + codigo + '\'' +
                 ", modelo='" + modelo + '\'' +
                 '}';
+    }
+
+    @Override
+    public void reset() {
+        System.out.println("Reseteando Monitor...");
     }
 }

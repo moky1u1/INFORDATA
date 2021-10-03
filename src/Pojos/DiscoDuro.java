@@ -1,6 +1,8 @@
 package Pojos;
 
-public class DiscoDuro extends Alquiler{
+import Interfaces.IReseteable;
+
+public class DiscoDuro extends Alquiler implements IReseteable {
     private int capacidadDisco;
 
     public DiscoDuro(String codigo, String modelo, double precioHora, int capacidadDisco){
@@ -25,5 +27,10 @@ public class DiscoDuro extends Alquiler{
                 ", codigo='" + codigo + '\'' +
                 ", modelo='" + modelo + '\'' +
                 '}';
+    }
+
+    @Override
+    public void reset() {
+        System.out.println("Formateando Disco Duro...");
     }
 }

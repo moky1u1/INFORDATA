@@ -1,8 +1,10 @@
 package Pojos;
 
+import Interfaces.IReseteable;
+
 import java.util.Date;
 
-public class CPU extends ProdTecnologico {
+public class CPU extends ProdTecnologico implements IReseteable {
     private int memoriaPrincipal;
 
     public CPU(String codigo, String modelo, String paisOrigen, Date fechaFabricacion, Empresa fabricante, int memoriaPrincipal) {
@@ -28,5 +30,10 @@ public class CPU extends ProdTecnologico {
                 ", codigo='" + codigo + '\'' +
                 ", modelo='" + modelo + '\'' +
                 '}';
+    }
+
+    @Override
+    public void reset() {
+        System.out.println("Restableciendo CPU a valores de fabrica...");
     }
 }
