@@ -16,4 +16,13 @@ public class Alquiler extends Producto{
     public void setPrecioHora(double precioHora) {
         this.PrecioHora = precioHora;
     }
+
+    @Override
+    public String toString() {
+        return "Alquiler{" +
+                "PrecioHora=" + PrecioHora +
+                ", codigo='" + codigo + '\'' +
+                ", modelo='" + modelo + '\'' +
+                '}';
+    }
 }
