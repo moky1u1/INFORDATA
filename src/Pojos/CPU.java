@@ -36,4 +36,10 @@ public class CPU extends ProdTecnologico implements IReseteable {
     public void reset() {
         System.out.println("Restableciendo CPU a valores de fabrica...");
     }
+
+    @Override
+    public void estado() {
+        System.out.println("Tiempo en uso: " + 2 + " " + "años");
+    }
+
 }

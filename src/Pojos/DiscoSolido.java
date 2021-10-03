@@ -36,4 +36,9 @@ public class DiscoSolido extends ProdTecnologico implements IReseteable {
     public void reset() {
         System.out.println("Formateando Disco de Estado Solido...");
     }
+
+    @Override
+    public void estado() {
+        System.out.println("Memoria Reescrita: " + 15823 + "Gb");
+    }
 }

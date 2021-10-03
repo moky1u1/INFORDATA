@@ -33,4 +33,10 @@ public class Impresora extends Producto implements IReseteable {
     public void reset() {
         System.out.println("Reseteando Impresora...");
     }
+
+
+    @Override
+    public void estado() {
+        System.out.println("Paginas Impresas: " + 450008);
+    }
 }

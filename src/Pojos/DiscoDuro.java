@@ -33,4 +33,9 @@ public class DiscoDuro extends Alquiler implements IReseteable {
     public void reset() {
         System.out.println("Formateando Disco Duro...");
     }
+
+    @Override
+    public void estado() {
+        System.out.println("Memoria Almacenada: " + 5705 + "Gb");
+    }
 }

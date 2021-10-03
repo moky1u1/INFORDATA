@@ -1,6 +1,6 @@
 package Pojos;
 
-public class Alquiler extends Producto{
+public abstract class Alquiler extends Producto{
     protected double PrecioHora;
 
     public Alquiler(String codigo, String modelo, double PrecioHora){

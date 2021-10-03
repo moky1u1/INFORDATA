@@ -33,4 +33,9 @@ public class Monitor extends Alquiler implements IReseteable {
     public void reset() {
         System.out.println("Reseteando Monitor...");
     }
+
+    @Override
+    public void estado() {
+        System.out.println("Años de uso: " + 5);
+    }
 }

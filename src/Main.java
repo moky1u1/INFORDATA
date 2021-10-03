@@ -61,19 +61,28 @@ public class Main {
 
         Monitor Asus4k = new Monitor("A123","Monitor Asus 4k",5.5,"4K");
         Asus4k.reset();
+        Asus4k.estado();
+        System.out.println(" ");
 
         Empresa DELL = new Empresa("DELL", "AV America #463",1400);
         CPU compu1 = new CPU("B456","DELL Rgb","USA", Calendar.getInstance().getTime(),DELL,2000 );
         compu1.reset();
+        compu1.estado();
+        System.out.println(" ");
 
         Impresora Aoc1 = new Impresora("C789","Impresora AOC full color",80);
         Aoc1.reset();
+        Aoc1.estado();
+        System.out.println(" ");
 
         DiscoDuro Disco1 = new DiscoDuro("A4321", "Disco Seagate Barracuda 8Tb",8.5,8);
         Disco1.reset();
+        Disco1.estado();
+        System.out.println(" ");
 
         Empresa WesternDigital = new Empresa("Western Digital","Calle Bolivar #321",845);
         DiscoSolido Disco2 = new DiscoSolido("B987","SSD Western Digital Black 16Tb","China", Calendar.getInstance().getTime(),WesternDigital,16 );
         Disco2.reset();
+        Disco2.estado();
     }
 }
