@@ -34,4 +34,13 @@ public class Cilente {
     public void setDomicilio(String domicilio) {
         this.domicilio = domicilio;
     }
+
+    @Override
+    public String toString() {
+        return "Cilente{" +
+                "Dni='" + Dni + '\'' +
+                ", telefono=" + telefono +
+                ", domicilio='" + domicilio + '\'' +
+                '}';
+    }
 }

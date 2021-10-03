@@ -46,4 +46,14 @@ public class Compra {
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
+
+    @Override
+    public String toString() {
+        return "Compra{" +
+                "proveedor=" + proveedor +
+                ", producto=" + producto +
+                ", fecha=" + fecha +
+                ", cantidad=" + cantidad +
+                '}';
+    }
 }

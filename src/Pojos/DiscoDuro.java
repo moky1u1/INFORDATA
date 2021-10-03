@@ -16,4 +16,14 @@ public class DiscoDuro extends Alquiler{
     public void setCapacidadDisco(int capacidadDisco) {
         this.capacidadDisco = capacidadDisco;
     }
+
+    @Override
+    public String toString() {
+        return "DiscoDuro{" +
+                "PrecioHora=" + PrecioHora +
+                ", capacidadDisco=" + capacidadDisco +
+                ", codigo='" + codigo + '\'' +
+                ", modelo='" + modelo + '\'' +
+                '}';
+    }
 }

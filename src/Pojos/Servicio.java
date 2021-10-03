@@ -44,4 +44,14 @@ public class Servicio {
     public void setTotalFacturado(double totalFacturado) {
         this.totalFacturado = totalFacturado;
     }
+
+    @Override
+    public String toString() {
+        return "Servicio{" +
+                "cilente=" + cilente +
+                ", impresora=" + impresora +
+                ", detalle='" + detalle + '\'' +
+                ", totalFacturado=" + totalFacturado +
+                '}';
+    }
 }

@@ -17,4 +17,16 @@ public class DiscoSolido extends ProdTecnologico{
     public void setCapacidad(int capacidad) {
         this.capacidad = capacidad;
     }
+
+    @Override
+    public String toString() {
+        return "DiscoSolido{" +
+                "capacidad=" + capacidad +
+                ", paisOrigen='" + paisOrigen + '\'' +
+                ", fechaFabricacion=" + fechaFabricacion +
+                ", fabricante=" + fabricante +
+                ", codigo='" + codigo + '\'' +
+                ", modelo='" + modelo + '\'' +
+                '}';
+    }
 }

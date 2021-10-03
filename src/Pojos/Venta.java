@@ -36,4 +36,13 @@ public class Venta {
     public void setFecha(Date fecha) {
         this.fecha = fecha;
     }
+
+    @Override
+    public String toString() {
+        return "Venta{" +
+                "cilente=" + cilente +
+                ", impresora=" + impresora +
+                ", fecha=" + fecha +
+                '}';
+    }
 }

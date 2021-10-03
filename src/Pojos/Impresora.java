@@ -17,4 +17,13 @@ public class Impresora extends Producto {
     public void setVelocidad(int velocidad) {
         this.velocidad = velocidad;
     }
+
+    @Override
+    public String toString() {
+        return "Impresora{" +
+                "velocidad=" + velocidad +
+                ", codigo='" + codigo + '\'' +
+                ", modelo='" + modelo + '\'' +
+                '}';
+    }
 }

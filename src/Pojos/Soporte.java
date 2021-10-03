@@ -34,4 +34,13 @@ public class Soporte {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+
+    @Override
+    public String toString() {
+        return "Soporte{" +
+                "empresa=" + empresa +
+                ", producto=" + producto +
+                ", precio=" + precio +
+                '}';
+    }
 }
